@@ -3,3 +3,4 @@ geckodriver
 __pycache__
 *.pyc
 *.pyc/*cmake/*.DS_Store/.user
+*.pyc/*cmake/*.DS_Store/.user
