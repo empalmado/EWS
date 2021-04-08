@@ -74,3 +74,83 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1615772360258	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
 1615772537085	Marionette	INFO	Stopped listening on port 40843
+1617882284967	geckodriver	INFO	Listening on 127.0.0.1:33565
+1617882285825	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehfpYCZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617882293436	Marionette	INFO	Listening on port 43487
+1617882293556	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617882365989	Marionette	INFO	Stopped listening on port 43487
+1617882396572	geckodriver	INFO	Listening on 127.0.0.1:58825
+1617882396582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRwtots"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617882401932	Marionette	INFO	Listening on port 36883
+1617882402026	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617882617858	Marionette	INFO	Stopped listening on port 36883
+1617882619773	geckodriver	INFO	Listening on 127.0.0.1:47509
+1617882619781	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9KveFz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617882624928	Marionette	INFO	Listening on port 34215
+1617882625060	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617882631876	Marionette	INFO	Stopped listening on port 34215
+1617882741897	geckodriver	INFO	Listening on 127.0.0.1:41741
+1617882741907	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5Kyoze"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617882747357	Marionette	INFO	Listening on port 38963
+1617882747456	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1617883125613	geckodriver	INFO	Listening on 127.0.0.1:53169
+1617883125619	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJJbspn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617883131058	Marionette	INFO	Listening on port 43701
+1617883131157	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1617883136267	Marionette	INFO	Stopped listening on port 43701
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1617883164688	geckodriver	INFO	Listening on 127.0.0.1:57609
+1617883164695	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezY2twD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617883170725	Marionette	INFO	Listening on port 42351
+1617883170842	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1617883174000	Marionette	INFO	Stopped listening on port 42351
+1617883176500	Marionette	INFO	Stopped listening on port 38963
+1617883339375	geckodriver	INFO	Listening on 127.0.0.1:60833
+1617883339385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileD7G7Hj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617883344602	Marionette	INFO	Listening on port 45839
+1617883344740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617883535549	geckodriver	INFO	Listening on 127.0.0.1:34941
+1617883535558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQxNl9v"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617883540933	Marionette	INFO	Listening on port 42229
+1617883541008	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1617884196024	Marionette	INFO	Stopped listening on port 45839
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617886370029	geckodriver	INFO	Listening on 127.0.0.1:32883
+1617886370039	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCMiBRi"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617886375422	Marionette	INFO	Listening on port 40833
+1617886375495	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1617886378612	Marionette	INFO	Stopped listening on port 40833
+1617886458760	geckodriver	INFO	Listening on 127.0.0.1:37325
+1617886458769	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoKWLMc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617886464236	Marionette	INFO	Listening on port 40897
+1617886464305	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))

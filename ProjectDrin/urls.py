@@ -1,11 +1,10 @@
-
 from django.conf.urls import url
 from EWS import views
 
 
 urlpatterns = [
-	url(r'^$' , views.MainPage, name= 'mainpage' ),
-	]
+	url(r'^$', views.MainPage, name='mainpage'),
+]
 
 
 """ProjectDrin URL Configuration
