@@ -4,11 +4,12 @@
 
 from django.urls import resolve
 from django.test import TestCase
-from EWS.views import Mainpage
+from EWS.views import MainPage
+
 class HomePageTest(TestCase):
 	def test_root_url_resolves_to_mainpage_views(self):
 		found=resolve('/')#
-		self.asserEqual(found.func, MainPage)
+		self.assertEqual(found.func, MainPage)
 		
 #class ProjectDrin(TestCase):
 	
