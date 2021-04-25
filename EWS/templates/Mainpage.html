@@ -2,27 +2,25 @@
 
 
 <title>Empalmado Welding Shop</title>
-<center><h1 style="color">EWS Free Estimate</h1> </center>
-<h2 style="color:;"></h2> 
-
+<h1 style="color"><center>EWS Free Estimate</center></h1> 
 
 <body bgcolor="lightgray">
-	<form class ="form" action="" method="post">
+	<form class ="form" action="#" method="post">
 		{% csrf_token %}
 	<center>
 	
 
-		<label for="Name">Name or Company Name:</label><br>
-		<input type="text" id="Name" name="Name" value=""><br><p>
-		<label for="Contact">Contact No.:</label><br>
-		<input type="text" id="Contact" name="Contact" value=""><br><p>
-		<label for="Iname">Product Name:</label><br>
-		<input type="text" id="Iname" name="Iname" value=""><br><p>
-		<label for="Size">Sizes of Product in inch/ft:</label><br>
-		<input type="text" id="Size" name="Size" value=""><br><p>
-		<label for="Type">Stainless Type 304 or 202:</label><br>
-		<input type="text" id="Type" name="Type" value=""><br><p>
-		<input type="submit" value="Submit">
+		<label id="Name">Name or Company Name:</label><br>
+		<input type="text" id="Names" name="Name" value=""><br><br>
+		<label id="Contact">Contact No.:</label><br>
+		<input type="text" id="Contacts" name="Contact" value=""><br><br>
+		<label id="Iname">Product Name:</label><br>
+		<input type="text" id="Inames" name="Iname" value=""><br><br>
+		<label id="Size">Sizes of Product in inch/ft:</label><br>
+		<input type="text" id="Sizes" name="Size" value=""><br><br>
+		<label id="Type">Stainless Type 304 or 202:</label><br>
+		<input type="text" id="Types" name="Type" value=""><br><br>
+		<input type="submit" value="submit" id="Submit" name="Submit">
 	
 
 
