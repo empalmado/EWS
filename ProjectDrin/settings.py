@@ -1,3 +1,4 @@
+
 """
 Django settings for ProjectDrin project.
 
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'ProjectDrin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

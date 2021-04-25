@@ -1,0 +1,32 @@
+<html>
+
+
+<title>Empalmado Welding Shop</title>
+<center><h1 style="color">EWS Free Estimate</h1> </center>
+<h2 style="color:;"></h2> 
+
+
+<body bgcolor="lightgray">
+	<form class ="form" action="" method="post">
+		{% csrf_token %}
+	<center>
+	
+
+		<label for="Name">Name or Company Name:</label><br>
+		<input type="text" id="Name" name="Name" value=""><br><p>
+		<label for="Contact">Contact No.:</label><br>
+		<input type="text" id="Contact" name="Contact" value=""><br><p>
+		<label for="Iname">Product Name:</label><br>
+		<input type="text" id="Iname" name="Iname" value=""><br><p>
+		<label for="Size">Sizes of Product in inch/ft:</label><br>
+		<input type="text" id="Size" name="Size" value=""><br><p>
+		<label for="Type">Stainless Type 304 or 202:</label><br>
+		<input type="text" id="Type" name="Type" value=""><br><p>
+		<input type="submit" value="Submit">
+	
+
+
+</center>
+</form>
+</body>
+</html>

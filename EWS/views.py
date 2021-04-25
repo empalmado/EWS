@@ -1,10 +1,29 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
+from .models import Item
 
 # Create your views here.
+def Firstpage(request):
 
-"""MainPage = None"""
+	if request.method == 'POST':
 
-def MainPage(request):
-	return HttpResponse('<html><title>Empalmado Welding Shop</title><h1 style="color:green;">EWS FREE ESTIMATION</h1> <form><label for="Iname">Item/Product Name:</label><br><input type="text" id="Iname" name="Iname" value=""><br><label for="Size">Size in inch/ft:</label><br><input type="text" id="Size" name="Size" value=""><br><br><input type="submit" value="Submit"></form> </body></html>')
+		Name = request.POST['Name']
+		Contact = request.POST['Contact']
+		ProductName = request.POST['Iname']
+		Size = request.POST['Size']
+		Type = request.POST['Type']
+		
+		
+		rin = Item()
+		rin.Name = Name
+		rin.Contact = Contact
+		rin.ProductName = ProductName
+		rin.Size = Size
+		rin.Type = Type
+		rin.save()
 
+	return render(request,'Mainpage.html')
+
+
+def Page(request):
+	rin = Item.objects.all().order_by('Name')
+	return render(request,'Databasesu.html', {'rin': rin})
