@@ -102,7 +102,12 @@ class ORM_save_mo_na_tih(TestCase):
 		self.assertEqual(save5.Type, '202')
 
 
-
+class Views(TestCase):
+	def test_mo_lang(self):
+		Item.objects.create(Name='Name', 
+			Contact='Contact', ProductName='ProductName', 
+			Size='Size', Type='Type')
+		response = self.client.get('/app/views.Firstpage/')
 
 
 
