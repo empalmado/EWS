@@ -46,7 +46,7 @@ class PageTest(unittest.TestCase):
 		time.sleep(2)
 
 		in4 = self.browser.find_element_by_id('Sizes')  
-		in4 = self.browser.find_element_by_id('Sizes').send_keys("12'x24'")
+		in4 = self.browser.find_element_by_id('Sizes').send_keys("12inchx24inch")
 		time.sleep(2)
 
 		in5 = self.browser.find_element_by_id('Types')  
@@ -62,23 +62,23 @@ class PageTest(unittest.TestCase):
 		self.browser.get('http://localhost:8000')
 		
 		in1 = self.browser.find_element_by_id('Names')  
-		in1 = self.browser.find_element_by_id('Names').send_keys("Aldrin Empalmado")
+		in1 = self.browser.find_element_by_id('Names').send_keys("Chef Boy")
 		time.sleep(2)
 
 		in2 = self.browser.find_element_by_id('Contacts')  
-		in2 = self.browser.find_element_by_id('Contacts').send_keys("09092116086")
+		in2 = self.browser.find_element_by_id('Contacts').send_keys("09352477689")
 		time.sleep(2)
 
 		in3 = self.browser.find_element_by_id('Inames')  
-		in3 = self.browser.find_element_by_id('Inames').send_keys("Griller")
+		in3 = self.browser.find_element_by_id('Inames').send_keys("Food Pan")
 		time.sleep(2)
 
 		in4 = self.browser.find_element_by_id('Sizes')  
-		in4 = self.browser.find_element_by_id('Sizes').send_keys("12'x24'")
+		in4 = self.browser.find_element_by_id('Sizes').send_keys("12inchx8inch")
 		time.sleep(2)
 
 		in5 = self.browser.find_element_by_id('Types')  
-		in5 = self.browser.find_element_by_id('Types').send_keys("304")
+		in5 = self.browser.find_element_by_id('Types').send_keys("202")
 		time.sleep(2)
 
 		submitbutton = self.browser.find_element_by_name('Submit').click()
