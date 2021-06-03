@@ -4,11 +4,11 @@ from django.template.loader import render_to_string
 from EWS.views import Firstpage
 from django.urls import resolve
 #For Models testing
-from EWS.models import Item
+from EWS.models import Item, User
 
 class IndexTest(TestCase):
 
-	def html_index_root_mainpage_pwede_din_homepage_basta(self):
+	def test_html_index_root_mainpage(self):
 		found = resolve('/')
 		self.assertEqual(found.func, Firstpage)
 
@@ -39,8 +39,43 @@ class IndexTest(TestCase):
 		self.assertIn('<input type="submit" value="submit" id="Submits" name="Submit">', html)
 		self.assertTrue(html.strip().endswith('</html>'))
 
-class ORM_save_mo_na_teh(TestCase):
-	def test_saving_koto(self):
+
+		
+
+
+class ListViewTest(TestCase):
+
+	def test_uses_list_template(self):
+		clients = User.objects.create()
+		response = self.client.get('/')
+		self.assertTemplateUsed(response, 'Mainpage.html')
+	def test_uses_home_template(self):
+		response = self.client.get('/Paps/')
+		self.assertTemplateUsed(response, 'Databasesu.html')
+	def test_displays_all_list_items(self):
+		clients = User.objects.create()
+		Name = Item.objects.create(Name='Name')
+		Contact = Item.objects.create(Contact='Contact')
+		ProductName = Item.objects.create(ProductName='ProductName')
+		Size = Item.objects.create(Size='Size')
+		Type = Item.objects.create(Type='Type')
+		response = self.client.get('/')
+		self.assertIn('Name', response.content.decode())
+		self.assertIn('Contact', response.content.decode())
+		self.assertIn('Iname', response.content.decode())
+		self.assertIn('Size', response.content.decode())
+		self.assertIn('Type', response.content.decode())
+		Name = Item.objects.get(Name="Name")
+		Contact = Item.objects.get(Contact="Contact")
+		ProductName = Item.objects.get(ProductName="ProductName")
+		Size = Item.objects.get(Size="Size")
+		Type = Item.objects.get(Type="Type")
+		
+		self.assertEqual(Item.objects.count(), 5)
+
+
+class ORM_save(TestCase):
+	def test_savin(self):
 
 		Item1 = Item()
 		Item1.Name = 'Aldrin Empalmado'
@@ -70,23 +105,23 @@ class ORM_save_mo_na_teh(TestCase):
 		self.assertEqual(save4.Size, '12inchx24inch')
 		self.assertEqual(save5.Type, '304')
 
-class ORM_save_mo_na_tih(TestCase):
-	def test_saving_koto(self):
+class ORM_save_(TestCase):
+	def test_savin(self):
 
 		Item1 = Item()
-		Item1.Name = 'Chef Boy'
+		Item1.Name = 'Aldrin Empalmado'
 		Item1.save()
 		Item2 = Item()
-		Item2.Contact = '09352477689'
+		Item2.Contact = '09092116086'
 		Item2.save()
 		Item3 = Item()
-		Item3.ProductName = 'Food Pan'
+		Item3.ProductName = 'Griller'
 		Item3.save()
 		Item4 = Item()
-		Item4.Size = '12inchx8inch'
+		Item4.Size = '12inchx24inch'
 		Item4.save()
 		Item5 = Item()
-		Item5.Type = '202'
+		Item5.Type = '304'
 		Item5.save()
 		saveall = Item.objects.all()
 		self.assertEqual(saveall.count(), 5)
@@ -95,20 +130,10 @@ class ORM_save_mo_na_tih(TestCase):
 		save3 = saveall[2]
 		save4 = saveall[3]
 		save5 = saveall[4]
-		self.assertEqual(save1.Name, 'Chef Boy')
-		self.assertEqual(save2.Contact, '09352477689')
-		self.assertEqual(save3.ProductName, 'Food Pan')
-		self.assertEqual(save4.Size, '12inchx8inch')
-		self.assertEqual(save5.Type, '202')
-
-
-class Views(TestCase):
-	def test_mo_lang(self):
-		Item.objects.create(Name='Name', 
-			Contact='Contact', ProductName='ProductName', 
-			Size='Size', Type='Type')
-		response = self.client.get('/app/views.Firstpage/')
-
-
+		self.assertEqual(save1.Name, 'Aldrin Empalmado')
+		self.assertEqual(save2.Contact, '09092116086')
+		self.assertEqual(save3.ProductName, 'Griller')
+		self.assertEqual(save4.Size, '12inchx24inch')
+		self.assertEqual(save5.Type, '304')
 
 
