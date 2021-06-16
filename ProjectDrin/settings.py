@@ -29,8 +29,6 @@ SECRET_KEY = '(x*a@n^b3qyf299iu8(#d@3e73%txz#!8ejqj!1030w3#835ys'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ews.ph']
-]
-
 
 # Application definition
 
