@@ -1,0 +1,65 @@
+<html>
+
+
+<title>Empalmado Welding Shop</title>
+<link rel="stylesheet" href="Estimate.css">
+
+<body bgcolor="lightgray">
+	<form class ="form" action="#" method="post">
+		{% csrf_token %}
+	<center>
+
+
+<div class="topnav">
+  <a href="Mainpage.html">Home</a>
+  <a class="active" href="Estimate.html">Free Estimate</a>
+  <a href="Product.html">Buy Now</a>
+
+
+  
+</div>	
+
+		<h1 align="center">Empalmado Welding Shop</h1> 
+		<h4 align="center">Free Estimate</h4>
+		
+
+		
+ 
+
+		<label id="CName">Name:</label>
+		<input type="text" id="CNames" name="CName">
+
+		<label id="Contact">Contact No.:</label>
+		<input type="text" id="Contacts" name="Contact"><br><br>
+
+		<label id="Gmail">Gmail:</label>
+		<input type="text" id="Gmails" name="Gmail">
+
+		<label id="Date">Date:</label>
+		<input type="text" id="Dates" name="Date"><br><br>
+
+		<label id="CAdd">Address:</label><br>
+		<textarea type="text" id="CAdds" name="CAdd" rows="2" cols="50"></textarea><br><br>
+
+
+		<label id="ProdDes">Product Description:</label><br>
+		<textarea type="text" id="ProdDess" name="ProdDes" rows="4" cols="50"></textarea><br><br>
+
+		<label id="MatDes">Material Description:</label><br>
+		<textarea type="text" id="MatDess" name="MatDes" rows="4" cols="50"></textarea><br><br>
+
+		<label id="Quant">Quantity:</label><br>
+		<input type="text" id="Quants" name="Quant"><br><br>
+
+		Upload your Plan lay-out or Sample Photos (docx, pdf, jpeg, jpg, and png file only)
+		<br><br>
+  		<label for="myfile">Select a file:</label>
+  		<input type="file" id="myfile" name="myfile"><br><br>
+		
+		<input type="submit" value="Submit" id="Submits" name="Submit">
+
+
+</center>
+</form>
+</body>
+</html>

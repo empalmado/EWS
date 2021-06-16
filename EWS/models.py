@@ -5,7 +5,6 @@ class User(models.Model):
 	FirstName = models.CharField(max_length=50, null=True)
 	LastName = models.CharField(max_length=50, null=True)
 	Email = models.CharField(max_length=50, null=True)
-	Next = models.CharField(max_length=50, null=True)
 
 
 	def __str__(self):
@@ -17,7 +16,6 @@ class Item(models.Model):
 
 	BuyProduct = models.CharField(max_length=50, null=True)
 	FreeQuote = models.CharField(max_length=50, null=True)
-	Submit = models.CharField(max_length=50, null=True)
 
 	def __str__(self):
 		return self.Name
@@ -32,13 +30,13 @@ class QuotePage(models.Model):
 	Date = models.CharField(max_length=50, null=True)
 
 
-	def __str__(self):
-		return self.Name
+# 	def __str__(self):
+# 		return self.Name
 
 
-class QuotePage2(models.Model):
+# class QuotePage2(models.Model):
 
-	clients = models.ForeignKey(User, default=None, on_delete=models.CASCADE, null=True)
+	# clients = models.ForeignKey(User, default=None, on_delete=models.CASCADE, null=True)
 
 	Gmail = models.CharField(max_length=50, null=True)
 	ProductDes = models.CharField(max_length=50, null=True)
@@ -52,10 +50,12 @@ class QuotePage2(models.Model):
 class BuyPage(models.Model):
 
 	clients = models.ForeignKey(User, default=None, on_delete=models.CASCADE, null=True)
-	ProductID = models.CharField(max_length=50, null=True)
+
+	ProductName = models.CharField(max_length=50, null=True)
 	Quantity = models.CharField(max_length=50, null=True)
 	Contact = models.CharField(max_length=50, null=True)
 	Address = models.CharField(max_length=50, null=True)
+	Email = models.CharField(max_length=50, null=True)
 	Payment = models.CharField('1','Cod'),('2','Gcash Mastercard')
 
 	

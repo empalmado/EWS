@@ -1,0 +1,56 @@
+<html>
+
+
+<title>Empalmado Welding Shop</title>
+
+<link rel="stylesheet" href="BuyProduct.css">
+
+<body bgcolor="lightgray">
+	<form class ="form" action="#" method="post">
+		{% csrf_token %}
+	<center>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+<body>
+
+
+<div class="topnav">
+  <a href="Mainpage.html">Home</a>
+  <a href="Estimate.html">Free Estimate</a>
+  <a class="active" href="Product.html">Buy Now</a>
+
+</div><br><br>  
+
+    <h1 align="center">Empalmado Welding Shop</h1> 
+    <h4 align="center">Free Estimate</h4>
+
+
+		<label id="ProdName">Product Name:</label><br>
+		<input type="text" id="ProdNames" name="ProdName"><br><br>
+
+		<label id="Qnt">Quantity:</label><br>
+		<input type="text" id="Qnts" name="Qnt"><br><br>
+
+		<label id="Contact">Contact No.:</label><br>
+    <input type="text" id="Contacts" name="Contact"><br><br>
+
+    <label id="Gmail">Gmail:</label><br>
+    <input type="text" id="Gmails" name="Gmail"><br><br>
+
+    <label id="Add">Address:</label><br>
+    <textarea type="text" id="Adds" name="Add" rows="2" cols="50"></textarea><br><br>
+
+    <label for="Payment">Mode of Payment:</label>
+    <input type="radio" id="Pay" name="Pay" value="Pay">
+    <label for="Payment">COD</label><br><br>
+
+
+    <input type="submit" value="submit" id="Submits" name="Submit">
+
+   
+
+
+
+</body>
+</html>
