@@ -1,42 +1,48 @@
 from django.shortcuts import redirect, render
-from .models import Item, User
+from .models import EstimatePage, BuyPage
 
 # Create your views here.
-def Firstpage(request):
+def EstimatePage(request):
 
 	if request.method == 'POST':
 
 
-		clients = User.objects.create()
+		clients = EstimatePage.objects.create()
 		Item.objects.create(
 			Name = request.POST['Name'],
-			Email = request.POST['Email'],
-			# Contact = request.POST['Contact'], 
-			# ProductName = request.POST['Iname'],
-			# Size = request.POST['Size'], 
-			# Type = request.POST['Type'],
+			Contact = request.POST['Contact'], 
+			Gmail = request.POST['Gmail'],
+			Date = request.POST['Date'],
+			Address = request.POST['Address'], 
+			ProductDes = request.POST['ProductDes'],
+			MaterialDes = request.POST['MaterialDes'],
+			Quantity = request.POST['Quantity'],
+			 )
+		return redirect('Paps')
+
+		clients = BuyPage.objects.create()
+		Item.objects.create(
+			ProductName = request.POST['Name'],
+			Quantity = request.POST['Contact'], 
+			Contact = request.POST['Gmail'],
+			Gmail = request.POST['Date'],
+			Address = request.POST['Address'], 
 			 )
 		return redirect('Paps')
 		
-		rin = Item()
-		rin.Name = Name
-		rin.Email = Email
-		# rin.Contact = Contact
-		# rin.ProductName = ProductName
-		# rin.Size = Size
-		# rin.Type = Type
-		rin.save()
+	# 	rin = Item()
+	# 	rin.Name = Name
+	# 	rin.Contact = Contact
+	# 	rin.Gmail = Gmail
+	# 	rin.Date = Date
+	# 	rin.Address = Address
+	# 	rin.ProductDes = ProductDes
+	# 	rin.MaterialDes = MaterialDes
+	# 	rin.Quantity = Quantity
+	# 	rin.save()
 
-	return render(request,'Mainpage.html')
+	# return render(request,'Estimate.html')
 
 
-def Page(request):
-	rin = Item.objects.all().order_by('Name')
-	rin = Item.objects.all().order_by('Email')
-	# rin = Item.objects.all().order_by('Contact')
-	# rin = Item.objects.all().order_by('ProductName')
-	# rin = Item.objects.all().order_by('Size')
-	# rin = Item.objects.all().order_by('Type')
 
-	return render(request,'Databasesu.html', {'rin': rin})
 
